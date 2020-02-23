@@ -1,0 +1,130 @@
+.box{
+min-width: 1258px;
+}
+.nav{
+    width: 100%;
+    height: 84px;
+    background-color: #eff4fa;
+    border-bottom: 2px solid #d3dce8;
+}
+.nav_z{
+    margin:16px 0 0 52px;
+
+}
+.nav_y{
+    margin-right: 52px;
+    font-size: 12px;
+    line-height: 84px;
+}
+.nav_y a{
+    color: #2e5ea1;
+}
+.nav_y span{
+    color: #b1b1b1;
+}
+.main{
+    width:1258px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: #fff;
+}
+.main_z{
+    margin-top: 5%;
+}
+.main_z img{
+    width:100% ;
+}
+.main_y{
+    width: 454px;
+    height: 522px;
+    border: 2px solid #9bacbf;
+    border-radius: 5px;
+}
+.main_y_title{
+    width: 100%;
+   height: 72px;
+    border-bottom: 2px solid #9bacbf;
+    text-align: center;
+    line-height: 72px;
+    font-size: 24px;
+    background-color: #f9fbfe;
+    color: #2e5ea1;
+}
+.main_y_content{
+    width: 90%;
+    margin: auto;
+   margin-top: 30px;
+}
+.main_input{
+    width: 100%;
+    height: 50px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.main_input input{
+    width: 100%;
+    border: 1px solid #9bacbf;
+    height: 50px;
+    text-indent: 5%;
+
+}
+.remember_password{
+    width: 100%;
+    margin-top: 5%;
+}
+.remember_password span{
+    font-size: 12px;
+    color: #294759;
+}
+.register{
+    width: 100%;
+    margin-top: 10%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color:#5d99dc;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.main_y_content_buttom{
+    width: 100%;
+    margin-top: 20%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#294759;
+}
+.main_y_content_buttom a{
+    color:#294759;
+}
+.footer{
+    height: 46px;
+    margin-top: 10%;
+    background-color: #e3e8ee;
+    border-top: 2px solid #d3dce8;
+    line-height: 46px;
+    text-align: center;
+    color: #9ca1aa;
+}
+
+.main_input img{
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+    top:15px;
+    display: none;
+
+}
+.meta{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: red;
+    text-align: center;
+
+}

@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width:0;
+}
+.zuijinTop{
+    height:89px;
+    width:100%;
+    background-color: #f5f6f9;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    position: fixed;
+    top: 98px;
+}
+.xiazai{
+    margin:18px 0;
+    margin-left:24px;
+    cursor: pointer;
+}
+.yidong{
+    margin:18px 0;
+    margin-left:10px;
+    cursor: pointer;
+}
+.chong{
+    margin:18px 0;
+    margin-left:10px;
+    cursor: pointer;
+}
+.shanchu{
+    margin:18px 0;
+    margin-left:10px;
+    cursor: pointer;
+}
+.xin{
+    margin:18px 0;
+    margin-left:10px;
+    cursor: pointer;
+}
+.sousuo{
+    height: 25px;
+    width: 200px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 31px 30px;
+ }
+.ss1{
+    height: 25px;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-image: url('../images/ss1.png');
+    background-position-x: -1px;
+    background-position-y: -3px;
+ }
+.sousouInput{
+    width: 172px;
+    height:25px;
+    line-height:25px;
+}
+.focusState{
+    background-image: url('../images/ss2.png');
+}
+.zuijinTitle{
+    position: fixed;
+    top: 189px;
+    padding-left: 2%;
+    margin:auto;
+    height:42px;
+    box-sizing:border-box;
+    border-bottom:1px solid #ccc;
+    line-height:42px;
+    font-size: 14px;
+    color:#505458;
+    margin-bottom:24px;
+}
+.zuijinTitle img{
+    margin: 10px;
+    margin-left: 0;
+}
+.content{
+    position: fixed;
+    top: 235px;
+    margin-top: 5%;
+    width:100%;
+    margin:auto;
+    min-height:100px;
+    /*background-color:rgba(0,0,0,.5);*/
+}
+.the{
+    padding:0 10px;
+    line-height: 40px;
+    height:40px;
+    border-left:1px solid #ccc;
+    background-color: #fafcff;
+}
+.none{
+    display: none;
+}
+.box{
+    float: left;
+    position: relative;
+    border:1px solid transparent;
+    width:120px;
+    height:110px;
+    overflow: hidden;
+    margin-bottom:30px;
+    text-align: center;
+    background-color: transparent;
+}
+.icon{
+    width:52px;
+    display: block;
+    margin:14px auto;
+}
+.box p{
+    height:40px;
+    overflow: hidden;
+    line-height:20px;
+    font-size:12px;
+    color:#25272a;
+    padding:0 10px;
+}
+.box2 p{
+    height:40px;
+    overflow: hidden;
+    line-height:20px;
+    font-size:12px;
+    color:#25272a;
+    padding:0 10px;
+}
+.select{
+    position: absolute;
+    top:0;
+    width:14px;
+    left:0;
+}
+.box2{
+    margin-bottom:30px;
+    float: left;
+    position: relative;
+    border:1px solid transparent;
+    width:120px;
+    height:110px;
+    overflow: hidden;
+    text-align: center;
+    background-color: transparent;
+}
+.allIcon{
+    cursor: pointer;
+}
+.box2 .icon{
+    width:44px;
+    display: block;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:12px;
+}
+.box,.box2{  cursor: pointer;
+   margin-right:15px;
+}
+.box2:hover,.box:hover{
+    border:1px solid #ccc;
+    background-color: #e9f3fd;
+}
+.box2H{
+    /*border:1px solid #ccc;*/
+    /*background-color: #e9f3fd;*/
+}
+.box2H .select{
+    display:block;
+}
+.box2C .box,.box2C .box2{
+    border:1px solid #ccc;
+    background-color: #e9f3fd;
+}
+.box2C .select{
+    display:block;
+}
+.moveBox{
+    width: 400px;
+    height:420px;
+    box-shadow:0 0 10px #000;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background-color:#fff;
+}
+.moveTitle{
+    height:48px;
+    font-size: 18px;
+    color:#250000;
+    font-weight: bold;
+    line-height:48px;
+    margin-left: 15px;
+    border-bottom:1px solid #ccc;
+}
+.closeMove{
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    font-size: 50px;
+    color: #ccc;
+    font-weight: 100;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.wenjian{
+    width:100%;
+    padding: 0 24px;
+}
+.name{
+    font-size: 14px;
+    color:#250000;
+    width:250px;
+    margin-top: 15px;
+}
+.size{
+    font-size: 12px;
+    color:#999;
+    line-height:20px;
+    width:250px;
+}
+.wenjian img{
+    height:40px;
+    line-height:20px;
+    margin-right: 7px;
+    margin-top: 15px;
+}
+.urlBox{
+    border:1px solid #ccc;
+    height:240px;
+    width:325px;
+    margin:auto;
+    margin-top:18px;
+}
+.urlBoxTitle{
+    height:36px;
+    color:#999;
+    text-indent:10px;
+    line-height:36px;
+    font-size: 14px;
+    border-bottom:1px solid #ccc;
+}
+.contentMain{
+    width: 100%;
+    padding-left: 22px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 205px;
+}
+.templateUrl img{
+    width:30px;
+    margin-right:4px;
+}
+.templateUrl{
+    cursor: pointer;
+    width:100%;
+    height:25px;
+    line-height:25px;
+    margin-bottom:6px;
+}
+.arrow{
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-left:5px solid #ccc;
+    margin-top:8px;
+}
+.templateUrl{
+    margin-left: 10px;
+    margin-top:4px;
+}
+.templateUrlClickP{
+    color:#0890DD;
+}
+.quxiao{
+    cursor: pointer;
+    width: 60px;
+    height:35px;
+    text-align: center;
+    line-height:33px;
+    border-radius:4px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    color:#808080;
+    margin-left:10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.ok{
+    cursor: pointer;
+    width: 60px;
+    height:33px;
+    text-align: center;
+    line-height:35px;
+    color:#fff;
+    background-color: #96c6fa;
+    border-radius:4px;
+    margin-left:10px;
+    margin-top: 10px;
+}
+

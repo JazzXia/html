@@ -1,0 +1,19 @@
+<svg width="333" height="333" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="335" width="335" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(18.706908553032235,0,0,8.713597506815402,-6708.675702810751,-2194.879524395536) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="283.9125" x="368.3" stroke-width="0" fill="#000000"/>
+  <rect id="svg_7" height="333" width="333" y="0.9125" x="0.3" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#050101"/>
+  <text font-weight="normal" stroke="#000" transform="matrix(3.747512965543668,0,0,5.344644094639145,-1398.2708439491776,-689.8300414045485) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_8" y="152.802578" x="376.014574" stroke-width="0" fill="#EEFF9F">JazzXia</text>
+  <rect stroke="#000" id="svg_10" height="174.999988" width="194.000005" y="158.912504" x="1.299995" stroke-opacity="null" stroke-width="1.5" fill="#d69d0e"/>
+  <rect stroke="#000" id="svg_11" height="174.999994" width="138.999994" y="158.912508" x="193.3" stroke-opacity="null" stroke-width="1.5" fill="#e00808"/>
+  <text font-weight="normal" transform="matrix(2.6560829440030886,0,0,5.23926849747363,-797.4859661038037,-1443.4316977196027) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_9" y="328.468713" x="309.391608" stroke-width="1.5" fill="#fff">CloudDisk</text>
+ </g>
+</svg>

@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width:0;
+}
+.zuijinTop{
+    height:89px;
+    width:100%;
+    background-color: #f5f6f9;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    position: fixed;
+    top: 89px;
+}
+.shanchu{
+    margin:18px 0;
+    margin-left:24px;
+    cursor: pointer;
+}
+.huanyuan{
+    margin:18px 0;
+    margin-left:10px;
+    cursor: pointer;
+}
+.sousuo{
+    height: 25px;
+    width: 200px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 31px 30px;
+ }
+.ss1{
+    height: 25px;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-image: url('../images/ss1.png');
+    background-position-x: -1px;
+    background-position-y: -3px;
+ }
+.sousouInput{
+    width: 172px;
+    height:25px;
+    line-height:25px;
+}
+.focusState{
+    background-image: url('../images/ss2.png');
+}
+.zuijinTitle{
+    margin:auto;
+    height:42px;
+    box-sizing:border-box;
+    border-bottom:1px solid #ccc;
+    line-height:42px;
+    font-size: 14px;
+    color:#505458;
+    margin-bottom:24px;
+    top: 189px;
+    padding-left: 2%;
+}
+.zuijinTitle img{
+    margin: 10px;
+    margin-left: 0;
+}
+.content{
+    width:100%;
+}
+.template{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    color:#333;
+    font-size: 14px;
+    background-color:#fff;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+.template:hover{
+    cursor: pointer;
+    background-color: #e9f3fd;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.template .iconImg{
+    height:30px;
+    margin:10px 24px;
+    margin-right:15px;
+    margin-left:14px;
+}
+.templateState{
+    margin: 15px;
+    margin-left:24px;
+    margin-right: 0;
+}
+.time{
+    font-size:12px;
+    color:#868686;
+    margin-right:24px;
+}
+.time span{
+    margin-left:10px;
+}
+.size{
+    font-size:12px;
+    color:#868686;
+    margin-right:30px;
+}
+.allSelect{
+    cursor: pointer;
+}
+.huanyuanBox{
+    width: 400px;
+    height:225px;
+    box-shadow:0 0 10px #000;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background-color:#fff;
+}
+.huanyuanTitle{
+    height:48px;
+    font-size: 18px;
+    color:#250000;
+    font-weight: bold;
+    line-height:48px;
+    margin-left: 15px;
+    border-bottom:1px solid #ccc;
+}
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    font-size: 50px;
+    color: #ccc;
+    font-weight: 100;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.content{
+    margin-top: 32px;
+    text-align: center;
+    width:100%
+}
+
+.p1{
+    line-height:40px;
+    font-size: 14px;
+    color:#250000;
+}
+.p2{
+    line-height:30px;
+    font-size: 12px;
+    color:#999;
+}
+.hintIcon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 90px;
+    left: 75px;
+}
+.quxiao{
+    cursor: pointer;
+    width: 60px;
+    height:35px;
+    text-align: center;
+    line-height:33px;
+    border-radius:4px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    color:#808080;
+    margin-left:10px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.ok{
+    cursor: pointer;
+    width: 60px;
+    height:33px;
+    text-align: center;
+    line-height:35px;
+    color:#fff;
+    background-color: #4c9ff0;
+    border-radius:4px;
+    margin-left:10px;
+    margin-top: 20px;
+}
+
+#page_content{
+    position: relative;
+}

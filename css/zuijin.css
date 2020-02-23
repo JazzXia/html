@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width:0;
+}
+.zuijinTop{
+    height:89px;
+    width:100%;
+    background-color: #f5f6f9;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    position: fixed;
+    top: 89px;
+}
+.qingkong{
+    margin:18px 0;
+    margin-left:24px;
+    cursor: pointer;
+}
+.sousuo{
+    height: 25px;
+    width: 200px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 31px 30px;
+ }
+.ss1{
+    height: 25px;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-image: url('../images/ss1.png');
+    background-position-x: -1px;
+    background-position-y: -3px;
+ }
+.sousouInput{
+    width: 172px;
+    height:25px;
+    line-height:25px;
+}
+.focusState{
+    background-image: url('../images/ss2.png');
+}
+.zuijinTitle{
+    margin:auto;
+    height:42px;
+    box-sizing:border-box;
+    border-bottom:1px solid #ccc;
+    line-height:42px;
+    font-size: 14px;
+    color:#505458;
+    margin-bottom:24px;
+    top: 189px;
+    padding-left: 2%;
+}
+.content{
+    width:100%;
+}
+.template{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    color:#333;
+    font-size: 14px;
+    background-color:#fff;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
+.template:hover{
+    cursor: pointer;
+    background-color: #e9f3fd;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.template img{
+    height:30px;
+    margin:10px 24px;
+    margin-right:15px;
+}
+.time{
+    font-size:12px;
+    color:#868686;
+    margin-right:24px;
+}
+.time span{
+    margin-left:10px;
+}
+.size{
+    font-size:12px;
+    color:#868686;
+    margin-right:30px;
+}
+
+#page_content{
+    position: relative;
+}
