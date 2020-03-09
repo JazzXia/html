@@ -58,7 +58,7 @@ function createNewDir(){
    }
     var data = {remoteDir:pathStr};
     $.ajax({
-        url : "http://127.0.0.1:8080/api-diskinfo/disk/createDir",
+        url : "http://192.168.0.105:8080/api-diskinfo/disk/createDir",
         headers: {
             'token':cookie('token')
         },
@@ -117,7 +117,7 @@ function deleteOption(){
                 }
                 var data = {pathstr:pathStr};
                 $.ajax({
-                    url : "http://127.0.0.1:8080/api-diskinfo/disk/deleteFile",
+                    url : "http://192.168.0.105:8080/api-diskinfo/disk/deleteFile",
                     headers: {
                         'token':cookie('token')
                     },
@@ -182,7 +182,7 @@ function downloadOption(){
                 var direct = "d:/"+currentFile;
                 var data = {pathstr:pathStr,direct:direct};
                 $.ajax({
-                    url : "http://127.0.0.1:8080/api-diskinfo/disk/download",
+                    url : "http://192.168.0.105:8080/api-diskinfo/disk/download",
                     headers: {
                         'token':cookie('token')
                     },
@@ -224,7 +224,7 @@ function showDiskInfo() {
     $("#currentFile").html(" ");
     var data = {pathstr:"/"+cookie("userName")};
     $.ajax({
-        url : "http://127.0.0.1:8080/api-diskinfo/disk/list",
+        url : "http://192.168.0.105:8080/api-diskinfo/disk/list",
         headers: {
             'token':cookie('token')
         },
@@ -257,7 +257,7 @@ function doubleclick(detailInfo){
     $(".diskinfo").empty();
     var data = {pathstr:"/"+cookie("userName")+"/"+detailInfo};
     $.ajax({
-        url : "http://127.0.0.1:8080/api-diskinfo/disk/list",
+        url : "http://192.168.0.105:8080/api-diskinfo/disk/list",
         headers: {
             'token':cookie('token')
         },

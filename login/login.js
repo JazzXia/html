@@ -32,7 +32,7 @@ function checkName() {
 }
 
 function login() {
-    var url = "http://127.0.0.1:8080/api-system/role/login";
+    var url = "http://192.168.0.105:8080/api-system/role/login";
     var userName = $("#exampleInputEmail").val();
     var password = $("#exampleInputPassword").val();
     var code = $("#code").val();
@@ -93,7 +93,7 @@ function login() {
 * 将验证码写到login.html页面的id = verifyimg 的地方
 */
 function getvCode() {
-   document.getElementById("verifyimg").src = timestamp("http://127.0.0.1:8080/api-system/role/verifyCode");
+   document.getElementById("verifyimg").src = timestamp("http://192.168.0.105:8080/api-system/role/verifyCode");
 }
 //为url添加时间戳
 function timestamp(url) {

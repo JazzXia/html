@@ -81,7 +81,7 @@ function checkName() {
 
 //sendEmail
 function sendEmail(){
-    var url = "http://127.0.0.1:8080/api-system/role/sendEmail";
+    var url = "http://192.168.0.105:8080/api-system/role/sendEmail";
     var userName = $("#exampleInputUserName").val();
     var emailaddress = $("#exampleInputEmail").val();
     var data = {
@@ -101,7 +101,7 @@ function sendEmail(){
 }
 
 function registAction() {
-    var url = "http://127.0.0.1:8080/api-system/role/regist";
+    var url = "http://192.168.0.105:8080/api-system/role/regist";
     var userName = $("#exampleInputUserName").val();
     console.log(userName);
     var password = $("#exampleInputPassword").val();
