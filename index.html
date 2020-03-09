@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="zh_CN" >
 <head>
 <meta charset="UTF-8">
 <title>私人网盘系统菜单</title>
+<link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
 <link rel="stylesheet" href="./css/Menuestyle.css">
 </head>
 
@@ -10,16 +11,16 @@
 <div class='selector'>
   <ul>
     <li>
-      <input id='1' type="button"  id="disk" οnclick="cloudisk">
-      <label for='1'>个人网盘</label>
+      <input id='1' type="button">
+      <label for='1' id="directLocation">个人网盘</label>
     </li>
     <li>
       <input id='2' type="button" >
-      <label for='2'>匿名聊天</label>
+      <label for='2' id="websocket">匿名聊天</label>
     </li>
     <li>
       <input id='3' type="button">
-      <label for='3'>服务器检测</label>
+      <label for='3' id="SystemCheck">服务器检测</label>
     </li>
     <li>
       <input id='4' type="button">
@@ -27,17 +28,88 @@
     </li>
     <li>
       <input id='5' type="button">
-      <label for='5'>个人博客</label>
+      <label for='5' id="blog">个人博客</label>
+    </li>
+    <li>
+      <input id='6' type="button">
+      <label for='6'>退出登录</label>
     </li>
   </ul>
-  <button>点击展开</button>
+  <button>点击</button>
 </div>
 <script src="./vendor/jquery/jquery.min.js"></script>
 <script  src="./js/Menuindex.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script src="js/cookie_util.js"></script>
 <script>
-  function cloudisk(){
-      location.href = "/Diskindex.html";
+  SUCCESS = 200;
+  ERROR = 400;
+  $(function(){
+  $("#directLocation").click(cloudiskInfo);
+  $("#blog").click(showBlog);
+  $("#websocket").click(showChat);
+  $("#SystemCheck").click(SystemCheck);
+  showUserInfo();
+  })
+
+  function SystemCheck(){
+    location.href = "/SystemInfoIndex.html";
   }
+
+function showChat(){
+  window.open ("http://192.168.0.105:9000");
+}
+
+function showBlog(){
+  window.open ("https://www.qtatelier.com");
+}
+
+function cloudiskInfo(){
+  location.href = "/Diskindex.html";
+}
+
+function showUserInfo() {
+    var id = cookie("id");
+    var data = {userId:id};
+    $.ajax({
+        url : "http://192.168.0.105:8080/api-system/role/detail",
+        headers: {
+            'token':cookie('token')
+        },
+        data : data,
+        type : "GET",
+        dataType : "json",
+        beforeSend:function(XMLHttpRequest){
+            loadingFlag = layer.msg('正在加载中，请稍候……', { icon: 16, shade: 0.01,shadeClose:false,time:60000 });
+       },
+        success : function(result) {
+            layer.close(loadingFlag);
+            if (result.code == SUCCESS) {
+                var info = result.data;
+                // $("#name").html(info.nickName);
+                //$("#image").attr("src", "head_image/" + info.imageName);
+            } else {
+                if (result.code == ERROR) {
+                    layer.msg(result.msg)
+                }
+            }
+        },
+        error : function(e) {
+            if(cookie('token') == ""){
+                    layer.msg("登陆已过期!",{icon:2});
+                setInterval(function(){
+                    location.href = "login.html";
+                },2000);
+            }else{
+                layer.msg("当前服务器异常,请稍后重试",{icon:2});
+                setInterval(function(){
+                    location.href = "login.html";
+                },2000);
+            }
+        }
+    })
+}
+
 </script>
 </body>
 </html>

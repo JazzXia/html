@@ -4,6 +4,7 @@ $(function () {
     //controllerToken();
     showUserInfo();
     $('#logoutButton').click(logout);
+    $('#menueInfo').click(showMenue);
     showSystemInfo();
 });
 // function controllerToken(){
@@ -15,6 +16,9 @@ $(function () {
 //     };
 // }
 
+function showMenue(){
+    location.href = "/index.html"
+}
 
 
 function showSystemInfo(){

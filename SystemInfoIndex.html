@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务器健康监控</title>
+    <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/dark.js"></script>
+    <style>
+        ul,li{ list-style:none;}
+
+        .charts-left-list-memory {
+            list-style: none;
+            overflow: hidden;
+            float: left;
+            width: 100%;
+            padding: 0;
+        }
+        .charts-left-list-memory li {
+            float: left;
+            width: 100%;
+            color: #4A4A4A;
+            font-size: 13px;
+            line-height: 30px;
+            border-bottom: 1px solid #EEEEEE;
+        }
+
+        .charts-left-list {
+            list-style: none;
+            overflow: hidden;
+            float: left;
+            width: 100%;
+            padding: 0;
+        }
+        .charts-left-list li {
+            float: left;
+            width: 100%;
+            color: #4A4A4A;
+            font-size: 13px;
+            line-height: 30px;
+            border-bottom: 1px solid #EEEEEE;
+        }
+        .pull-left {
+            float: left !important;
+        }
+        span.pull-right {
+            padding: 0 6px;
+            float: right !important;
+        }
+        li.state-selected {
+            background-color: rgba(240, 225, 28, 0.3);
+        }
+
+        span.item-color{
+            float:left;
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            margin-top: 9px;
+            margin-right: 6px;
+        }
+        .tooltip-all{
+            max-width:180px;
+            padding:10px 16px;
+        }
+        .custom-tooltip{
+            float: left;
+            width:100%;
+        }
+        .tooltip-date{
+            float: left;
+            width:100%;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #EEEEEE;
+        }
+        .tooltip-detail{
+            float: left;
+            padding:10px 0;
+        }
+        .item-name{
+            float:left;
+        }
+        .item-num{
+            float:right;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="charts-left-list" style="width:30%; float:left">
+    <ul>
+        <li>
+            <span class="pull-left">
+                <span class="num">当前CPU的占用率</span>
+                <span class="list-color"></span>
+                <span class="list-name"></span>
+            </span>
+            <span class="pull-right" style="color: brown">单位 %</span>
+        </li>
+    </ul>
+</div>
+
+<div id="chartmain" style="width:70%; height: 400px; float:right;"></div>
+
+<div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div class="charts-left-list-memory" style="width:30%; float:left">
+    <ul>
+        <li>
+            <span class="pull-left">
+                <span class="num">当前内存的占用率</span>
+                <span class="list-color"></span>
+                <span class="list-name"></span>
+            </span>
+            <span class="pull-right" style="color: brown">单位 %</span>
+        </li>
+    </ul>
+</div>
+<div id="charts-memory-info" style="width:70%; height: 400px; float:right;"></div>
+<script type="text/javascript" src="js/layer.js"></script>
+<script src="js/cookie_util.js"></script>
+<script src="cpu/cpu.js"></script>
+</body>
+</html>
